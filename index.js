@@ -20,7 +20,7 @@ const apiRoute = require('./api/routes/product.route')
 const authMiddleware = require('./middleware/auth.middleware')
 const sessionMiddleware = require('./middleware/session.middleware')
 
-const port = 3000
+const port = process.env.PORT || 3000
 const app = express()
 
 
